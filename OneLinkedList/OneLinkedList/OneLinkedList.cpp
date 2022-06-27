@@ -92,6 +92,10 @@ public:
 
     void PushFront(T value)
     {
+        if (_tail == _head) {
+            PushBack(value);
+            return;
+        }
         Node<T>* temp = new Node<T>(value, _head->GetNext());
         _head->SetNext(temp);
         size++;
@@ -132,8 +136,9 @@ public:
         size--;
     }
 
-    void Swap(int first, int sec)
+    void Swap(size_t first, size_t sec)
     {
+        if (first > size || sec > size) return;
         Node<T>* iterF = _head;
         Node<T>* iterS = _head;
         for (int i = 0; i <= first; ++i) {
