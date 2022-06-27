@@ -153,6 +153,18 @@ public:
         iterS->SetValue(f);
     }
 
+    void CreateDB(string fileName)
+    {
+        if (fileName.find(".csv") != fileName.length() - 4) return;
+        ofstream fout(fileName);
+
+        Node<T>* iter = _head;
+        while (iter != _tail) {
+            iter = iter->GetNext();
+            fout << iter->GetValue() << ";\n";
+        }
+    }
+
     Node<T>* GetHead() { return _head; }
     Node<T>* GetTail() { return _tail; }
     int GetSize() { return size; }
@@ -211,7 +223,7 @@ int main()
     OneLinkedList<int> LL;
     string command;
     while (true) {
-        cout << "0. Вывести список.\n1. Добавить элемент в начало списка.\n2. Добавить элемент в конец списка.\n3. Добавить элемент в позицию n.\n4. Удалить элемент.\n.5. Сохранить список в файл.\n6. Загрузить список из файла.\n7. Переставить элементы местами.\n8. Выход.\n";
+        cout << "0. Вывести список.\n1. Добавить элемент в начало списка.\n2. Добавить элемент в конец списка.\n3. Добавить элемент в позицию n.\n4. Удалить элемент.\n.5. Сохранить список в файл.\n6. Загрузить список из файла.\n7. Переставить элементы местами.\n8. Создать БД.\n9. Выход.\n";
         cin >> command;
         if (command == "0") {
             cout << "\n" << LL << "\n";
@@ -271,6 +283,13 @@ int main()
             LL.Swap(a, b);
         }
         else if (command == "8") {
+            // save
+            cout << "\tВведите адресс файла ";
+            string b;
+            cin >> b;
+            LL.CreateDB(b);
+        }
+        else if (command == "9") {
             break;
         }
         else { cout << "неверная команда"; }
