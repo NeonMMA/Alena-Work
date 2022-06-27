@@ -486,6 +486,54 @@ public:
 		}
 	}
 
+	vector<T> RootPath(const T& value) 
+	{
+		vector<T> res;
+		if (!Contains(value)) return res;
+
+		TreeNode* parent = Find(value).second;
+		res.push_back(parent->_value);
+		while (parent != _root) {
+			parent = Find(parent->_value).first;
+			res.push_back(parent->_value);
+		}
+		return res;
+	}
+
+	vector<T> Path(const T& first, const T& second)
+	{
+		vector<T> firstPath = RootPath(first);
+		vector<T> secPath = RootPath(second);
+		vector<T> res;
+
+		if (firstPath.empty() || secPath.empty()) return res;
+
+		bool compare = false;
+		int compareNumFirst = 0;
+		int compareNumSec = 0;
+		for (int i = 0; i < firstPath.size(); ++i) {
+			for (int j = 0; j < secPath.size(); ++j) {
+				if (firstPath[i] == secPath[j]) {
+					compare = true;
+					compareNumFirst = i;
+					compareNumSec = j;
+					break;
+				}
+			}
+			if (compare) break;
+		}
+		
+		for (int i = 0; i < compareNumFirst; ++i) {
+			res.push_back(firstPath[i]);
+		}
+
+		for (int i = compareNumSec; i >= 0; --i) {
+			res.push_back(secPath[i]);
+		}
+		
+		return res;
+	}
+
 	map<int, vector<T>> Wide(int depth = 1)
 	{
 		map<int, vector<T>> myMap;
