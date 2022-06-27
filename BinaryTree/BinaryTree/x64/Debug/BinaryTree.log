@@ -1,0 +1,20 @@
+﻿  BinaryTree.cpp
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.h(349,24): warning C4244: 'initializing': conversion from 'double' to 'size_t', possible loss of data
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.h(331): message : while compiling class template member function 'void BinaryTree<int>::Output(void)'
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.cpp(14): message : see reference to function template instantiation 'void BinaryTree<int>::Output(void)' being compiled
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.cpp(5): message : see reference to class template instantiation 'BinaryTree<int>' being compiled
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.h(363,21): warning C4244: '=': conversion from 'double' to 'size_t', possible loss of data
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.h(132,14): warning C4101: 'second_tmp': unreferenced local variable
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.h(122): message : while compiling class template member function 'bool BinaryTree<int>::Insert(const T &)'
+          with
+          [
+              T=int
+          ]
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.cpp(8): message : see reference to function template instantiation 'bool BinaryTree<int>::Insert(const T &)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.h(150): warning C4715: 'BinaryTree<int>::Insert': not all control paths return a value
+C:\visual C++\BinaryTree\BinaryTree\BinaryTree.h(75): warning C4715: 'BinaryTree<int>::operator=': not all control paths return a value
+  BinaryTree.vcxproj -> C:\visual C++\BinaryTree\x64\Debug\BinaryTree.exe
