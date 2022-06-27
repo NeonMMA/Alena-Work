@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pz4Console", "pz4Console\pz4Console.vcxproj", "{777033BF-E0AE-424E-924A-349FC349365F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{777033BF-E0AE-424E-924A-349FC349365F}.Debug|x64.ActiveCfg = Debug|x64
+		{777033BF-E0AE-424E-924A-349FC349365F}.Debug|x64.Build.0 = Debug|x64
+		{777033BF-E0AE-424E-924A-349FC349365F}.Debug|x86.ActiveCfg = Debug|Win32
+		{777033BF-E0AE-424E-924A-349FC349365F}.Debug|x86.Build.0 = Debug|Win32
+		{777033BF-E0AE-424E-924A-349FC349365F}.Release|x64.ActiveCfg = Release|x64
+		{777033BF-E0AE-424E-924A-349FC349365F}.Release|x64.Build.0 = Release|x64
+		{777033BF-E0AE-424E-924A-349FC349365F}.Release|x86.ActiveCfg = Release|Win32
+		{777033BF-E0AE-424E-924A-349FC349365F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA212913-49E8-4C79-858C-135AC8CAE159}
+	EndGlobalSection
+EndGlobal

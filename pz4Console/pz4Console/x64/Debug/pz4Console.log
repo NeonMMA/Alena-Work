@@ -1,0 +1,18 @@
+﻿  pz4Console.cpp
+C:\visual C++\pz4Console\pz4Console\LinkedList.h(428,43): warning C4018: '<': signed/unsigned mismatch
+C:\visual C++\pz4Console\pz4Console\LinkedList.h(426): message : while compiling class template member function 'void LinkedList<int>::Insert(const T &,size_t)'
+          with
+          [
+              T=int
+          ]
+C:\visual C++\pz4Console\pz4Console\pz4Console.cpp(38): message : see reference to function template instantiation 'void LinkedList<int>::Insert(const T &,size_t)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\visual C++\pz4Console\pz4Console\pz4Console.cpp(8): message : see reference to class template instantiation 'LinkedList<int>' being compiled
+C:\visual C++\pz4Console\pz4Console\LinkedList.h(472,43): warning C4018: '<': signed/unsigned mismatch
+C:\visual C++\pz4Console\pz4Console\LinkedList.h(470): message : while compiling class template member function 'void LinkedList<int>::Swap(size_t,size_t)'
+C:\visual C++\pz4Console\pz4Console\pz4Console.cpp(71): message : see reference to function template instantiation 'void LinkedList<int>::Swap(size_t,size_t)' being compiled
+C:\visual C++\pz4Console\pz4Console\LinkedList.h(476,43): warning C4018: '<': signed/unsigned mismatch
+  pz4Console.vcxproj -> C:\visual C++\pz4Console\x64\Debug\pz4Console.exe
