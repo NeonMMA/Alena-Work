@@ -121,6 +121,8 @@ public:
 	bool Insert(const T& value)
 	{
 
+		if (Contains(value)) return false;
+
 		if (Empty())
 		{
 			_root = new TreeNode(value, nullptr, nullptr);
@@ -266,6 +268,8 @@ public:
 		std::vector<T> tree;
 		TreeNode* tmpRoot = _root;
 
+		if (Empty()) return tree;
+
 		if (_root->_left == nullptr && _root->_right == nullptr)
 		{
 			tree.push_back(_root->_value);
@@ -298,6 +302,8 @@ public:
 	{
 		std::vector<T> tree;
 		TreeNode* tmp = _root;
+
+		if (Empty()) return tree;
 
 		if (_root->_left == nullptr && _root->_right == nullptr)
 		{
@@ -452,6 +458,9 @@ public:
 	{
 		vector<T> myVec;
 		vector<T> tmpVec;
+
+		if (Empty()) return myVec;
+
 		TreeNode* tmpRoot = _root;
 		myVec.push_back(_root->_value);
 		if (_root->_left != nullptr) {
@@ -481,6 +490,9 @@ public:
 	{
 		map<int, vector<T>> myMap;
 		map<int, vector<T>> tmpMap;
+
+		if (Empty()) return myMap;
+
 		TreeNode* tmpRoot = _root;
 		myMap[depth].push_back(_root->_value);
 		depth++;

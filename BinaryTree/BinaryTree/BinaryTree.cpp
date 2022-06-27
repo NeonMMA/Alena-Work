@@ -5,16 +5,6 @@ int main()
 	BinaryTree<int> tree;
 	setlocale(LC_ALL, "RUSSIAN");
 
-	tree.Insert(5);
-	tree.Insert(7);
-	tree.Insert(3);
-	tree.Insert(2);
-	tree.Insert(4);
-	tree.Insert(1);
-	tree.Output();
-	cout << "\n";
-	tree.FormingData();
-
 	string command;
 	while (true) {
 		cout << "0. Вывести дерево.\n1. Добавить вершину.\n2. Удалить вершину.\n3. Сохранить дерево в файл.\n4. Загрузить дерево из файла.\n5. Обход дерева в глубину.\n6. Обход дерева в ширину.\n7. Сортировка с помощью дерева по возрастанию.\n8. Сортировка с помощью дерева по убыванию.\n9. Выход.\n";
